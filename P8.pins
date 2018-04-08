@@ -1,0 +1,348 @@
+; Sun Apr 08 00:57:54 GMT+01:00 2018
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Jess+engine] of  %3AJESS-ENGINE
+)
+
+([P8_Class1] of  Chalet
+
+	(chimenea TRUE)
+	(distrito [practica8_Class3])
+	(dormitorios 5)
+	(inmobiliaria [practica8_Class6])
+	(jardin TRUE)
+	(m2 300.0)
+	(plazas_garaje 2)
+	(precio 600000.0))
+
+([P8_Class16] of  Cliente
+
+	(minusvalia TRUE)
+	(nombre "juan")
+	(num_familiares 2)
+	(presupuesto 100000.0)
+	(recomendaciones [practica8_Class10019]))
+
+([P8_Class17] of  Cliente
+
+	(minusvalia FALSE)
+	(nombre "pepe")
+	(num_familiares 2)
+	(presupuesto 3003000.0)
+	(recomendaciones
+		[practica8_Class11]
+		[practica8_Class10029]
+		[P8_Class8]
+		[practica8_Class10028]
+		[practica8_Class10027]
+		[P8_Class6]
+		[practica8_Class10026]
+		[P8_Class5]
+		[P8_Class4]
+		[P8_Class2]
+		[practica8_Class10022]
+		[P8_Class1]
+		[practica8_Class10021]
+		[practica8_Class10020]
+		[practica8_Class9]
+		[practica8_Class10019]
+		[practica8_Class10017]))
+
+([P8_Class2] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class3])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class6])
+	(m2 80.0)
+	(planta primero)
+	(precio 275000.0))
+
+([P8_Class3] of  Estudio
+
+	(ascensor TRUE)
+	(cocina_indep TRUE)
+	(distrito [practica8_Class2])
+	(dormitorios 0)
+	(inmobiliaria [practica8_Class7])
+	(m2 56.0)
+	(precio 200000.0))
+
+([P8_Class4] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class2])
+	(dormitorios 4)
+	(inmobiliaria [practica8_Class7])
+	(m2 180.0)
+	(planta primero)
+	(precio 280000.0))
+
+([P8_Class5] of  Chalet
+
+	(chimenea FALSE)
+	(distrito [practica8_Class0])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class5])
+	(jardin TRUE)
+	(m2 140.0)
+	(plazas_garaje 1)
+	(precio 300000.0))
+
+([P8_Class6] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class4])
+	(dormitorios 2)
+	(inmobiliaria [practica8_Class5])
+	(m2 100.0)
+	(planta primero)
+	(precio 340000.0))
+
+([P8_Class7] of  Estudio
+
+	(ascensor FALSE)
+	(cocina_indep TRUE)
+	(distrito [practica8_Class0])
+	(dormitorios 1)
+	(inmobiliaria [practica8_Class8])
+	(m2 55.0)
+	(precio 120000.0))
+
+([P8_Class8] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class3])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class8])
+	(m2 150.0)
+	(planta bajo)
+	(precio 228000.0))
+
+([practica8_Class0] of  Distrito
+
+	(contaminacion alto)
+	(criminalidad medio)
+	(nombre "Latina")
+	(viviendas
+		[practica8_Class10019]
+		[practica8_Class10027]
+		[practica8_Class10017]
+		[practica8_Class10029]
+		[P8_Class5]
+		[P8_Class7]))
+
+([practica8_Class10017] of  Piso
+
+	(ascensor FALSE)
+	(distrito [practica8_Class0])
+	(dormitorios 2)
+	(inmobiliaria [practica8_Class8])
+	(m2 72.0)
+	(planta primero)
+	(precio 100000.0))
+
+([practica8_Class10018] of  Estudio
+
+	(ascensor FALSE)
+	(cocina_indep TRUE)
+	(distrito [practica8_Class3])
+	(dormitorios 0)
+	(inmobiliaria [practica8_Class8])
+	(m2 50.0)
+	(precio 57000.0))
+
+([practica8_Class10019] of  Chalet
+
+	(chimenea TRUE)
+	(distrito [practica8_Class0])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class8])
+	(jardin FALSE)
+	(m2 88.0)
+	(plazas_garaje 1)
+	(precio 100000.0))
+
+([practica8_Class10020] of  Chalet
+
+	(chimenea TRUE)
+	(distrito [practica8_Class2])
+	(dormitorios 5)
+	(inmobiliaria [practica8_Class8])
+	(jardin TRUE)
+	(m2 182.0)
+	(plazas_garaje 1)
+	(precio 400500.0))
+
+([practica8_Class10021] of  Piso
+
+	(ascensor FALSE)
+	(distrito [practica8_Class2])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class7])
+	(m2 100.0)
+	(planta segundo)
+	(precio 100000.0))
+
+([practica8_Class10022] of  Chalet
+
+	(chimenea TRUE)
+	(distrito [practica8_Class3])
+	(dormitorios 6)
+	(inmobiliaria [practica8_Class7])
+	(jardin TRUE)
+	(m2 450.0)
+	(plazas_garaje 2)
+	(precio 1000002.0))
+
+([practica8_Class10024] of  Estudio
+
+	(ascensor FALSE)
+	(cocina_indep FALSE)
+	(distrito [practica8_Class4])
+	(dormitorios 1)
+	(inmobiliaria [practica8_Class7])
+	(m2 54.0)
+	(precio 45000.0))
+
+([practica8_Class10025] of  Estudio
+
+	(ascensor FALSE)
+	(cocina_indep TRUE)
+	(distrito [practica8_Class2])
+	(dormitorios 1)
+	(inmobiliaria [practica8_Class7])
+	(m2 77.0)
+	(precio 70000.0))
+
+([practica8_Class10026] of  Chalet
+
+	(chimenea FALSE)
+	(distrito [practica8_Class4])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class6])
+	(jardin TRUE)
+	(m2 180.0)
+	(plazas_garaje 1)
+	(precio 340000.0))
+
+([practica8_Class10027] of  Estudio
+
+	(ascensor TRUE)
+	(cocina_indep FALSE)
+	(distrito [practica8_Class0])
+	(dormitorios 2)
+	(inmobiliaria [practica8_Class6])
+	(m2 120.0)
+	(precio 130000.0))
+
+([practica8_Class10028] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class2])
+	(dormitorios 2)
+	(inmobiliaria [practica8_Class6])
+	(m2 120.0)
+	(planta tercero)
+	(precio 231000.0))
+
+([practica8_Class10029] of  Piso
+
+	(ascensor FALSE)
+	(distrito [practica8_Class0])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class6])
+	(m2 111.0)
+	(planta bajo)
+	(precio 243000.0))
+
+([practica8_Class11] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class4])
+	(dormitorios 2)
+	(inmobiliaria [practica8_Class5])
+	(m2 95.0)
+	(planta segundo)
+	(precio 200000.0))
+
+([practica8_Class15] of  Estudio
+
+	(ascensor TRUE)
+	(cocina_indep TRUE)
+	(distrito [practica8_Class3])
+	(dormitorios 1)
+	(inmobiliaria [practica8_Class5])
+	(m2 70.0)
+	(precio 75000.0))
+
+([practica8_Class2] of  Distrito
+
+	(contaminacion bajo)
+	(criminalidad bajo)
+	(nombre "Moncloa-Aravaca")
+	(viviendas
+		[practica8_Class10021]
+		[practica8_Class10028]
+		[practica8_Class10025]
+		[practica8_Class9]
+		[practica8_Class10020]
+		[P8_Class3]
+		[P8_Class4]))
+
+([practica8_Class3] of  Distrito
+
+	(contaminacion alto)
+	(criminalidad bajo)
+	(nombre "Chamberí")
+	(viviendas
+		[practica8_Class10022]
+		[practica8_Class10018]
+		[practica8_Class15]
+		[P8_Class1]
+		[P8_Class2]
+		[P8_Class8]))
+
+([practica8_Class4] of  Distrito
+
+	(contaminacion medio)
+	(criminalidad alto)
+	(nombre "Arganzuela")
+	(viviendas
+		[practica8_Class10024]
+		[practica8_Class11]
+		[practica8_Class10026]
+		[P8_Class6]))
+
+([practica8_Class5] of  Inmobiliaria
+
+	(nombre "MegaCasas")
+	(online TRUE))
+
+([practica8_Class6] of  Inmobiliaria
+
+	(nombre "ConfortableLife")
+	(online FALSE))
+
+([practica8_Class7] of  Inmobiliaria
+
+	(nombre "DreamHome")
+	(online TRUE))
+
+([practica8_Class8] of  Inmobiliaria
+
+	(nombre "TuCasa")
+	(online TRUE))
+
+([practica8_Class9] of  Chalet
+
+	(chimenea TRUE)
+	(distrito [practica8_Class2])
+	(dormitorios 3)
+	(inmobiliaria [practica8_Class5])
+	(jardin TRUE)
+	(m2 105.0)
+	(plazas_garaje 2)
+	(precio 350000.0))
