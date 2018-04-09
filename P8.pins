@@ -1,4 +1,4 @@
-; Sat Apr 07 17:23:44 CEST 2018
+; Mon Apr 09 17:55:24 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -59,8 +59,11 @@
 	(num_familiares 2)
 	(presupuesto 3003000.0)
 	(recomendaciones
+		[practica8_Class11]
 		[practica8_Class10029]
 		[P8_Class8]
+		[practica8_Class10028]
+		[P8_Class6]
 		[P8_Class4]
 		[P8_Class2]))
 
@@ -69,13 +72,7 @@
 	(minusvalia FALSE)
 	(nombre "pepe")
 	(num_familiares 2)
-	(presupuesto 300000.0)
-	(recomendaciones
-		[practica8_Class10029]
-		[P8_Class8]
-		[P8_Class4]
-		[P8_Class2]
-		[practica8_Class10021]))
+	(presupuesto 300000.0))
 
 ([P8_Class2] of  Piso
 
