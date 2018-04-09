@@ -1,4 +1,4 @@
-; Sun Apr 08 00:57:54 GMT+01:00 2018
+; Sat Apr 07 17:23:44 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -17,38 +17,65 @@
 	(plazas_garaje 2)
 	(precio 600000.0))
 
+([P8_Class10123] of  Perfil
+
+	(nombre "deportista"))
+
+([P8_Class10124] of  Perfil
+
+	(nombre "Rural"))
+
+([P8_Class10125] of  Perfil
+
+	(nombre "Familiar"))
+
+([P8_Class10126] of  Perfil
+
+	(nombre "Comercial"))
+
+([P8_Class10127] of  Perfil
+
+	(nombre "Empresario"))
+
+([P8_Class10129] of  Cliente
+
+	(centro_urbano_cerca FALSE)
+	(colegio_cerca FALSE)
+	(contaminacion_baja TRUE)
+	(criminalidad_baja TRUE)
+	(gim_cerca TRUE)
+	(minusvalia FALSE)
+	(nombre "deportista")
+	(parking FALSE)
+	(poligono_comercial_cerca FALSE)
+	(pref_jardin TRUE)
+	(transporte_accesible FALSE)
+	(zona_verde_cerca TRUE))
+
 ([P8_Class16] of  Cliente
 
 	(minusvalia TRUE)
 	(nombre "juan")
 	(num_familiares 2)
-	(presupuesto 100000.0)
-	(recomendaciones [practica8_Class10019]))
+	(presupuesto 3003000.0)
+	(recomendaciones
+		[practica8_Class10029]
+		[P8_Class8]
+		[P8_Class4]
+		[P8_Class2]))
 
 ([P8_Class17] of  Cliente
 
 	(minusvalia FALSE)
 	(nombre "pepe")
 	(num_familiares 2)
-	(presupuesto 3003000.0)
+	(presupuesto 300000.0)
 	(recomendaciones
-		[practica8_Class11]
 		[practica8_Class10029]
 		[P8_Class8]
-		[practica8_Class10028]
-		[practica8_Class10027]
-		[P8_Class6]
-		[practica8_Class10026]
-		[P8_Class5]
 		[P8_Class4]
 		[P8_Class2]
-		[practica8_Class10022]
-		[P8_Class1]
-		[practica8_Class10021]
-		[practica8_Class10020]
-		[practica8_Class9]
-		[practica8_Class10019]
-		[practica8_Class10017]))
+		[practica8_Class10021]))
 
 ([P8_Class2] of  Piso
 

@@ -1,4 +1,4 @@
-; Sun Apr 08 00:57:54 GMT+01:00 2018
+; Sat Apr 07 17:23:44 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -33,6 +33,12 @@
 		(range 0.0 %3FVARIABLE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot colegio_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot dormitorios
 		(type INTEGER)
 		(range 0 %3FVARIABLE)
@@ -64,6 +70,12 @@
 		(allowed-values bajo primero segundo tercero)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot gim_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3ADEFINITION-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
@@ -72,6 +84,10 @@
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot P8_Class10122
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot pref_jardin
@@ -105,13 +121,32 @@
 		(type INSTANCE)
 ;+		(allowed-classes Vivienda)
 		(create-accessor read-write))
+	(single-slot poligono_comercial_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3ADEFINITION
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parking
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot minusvalia
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot transporte_accesible
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot online
@@ -135,10 +170,10 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot B
+	(single-slot zona_verde_cerca
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-		(default TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot inmobiliaria
@@ -152,16 +187,26 @@
 		(cardinality 1 ?VARIABLE)
 ;+		(inverse-slot viviendas)
 		(create-accessor read-write))
-	(single-slot plazas_garaje
-		(type INTEGER)
-		(range 0 %3FVARIABLE)
-		(default 0)
+	(single-slot centro_urbano_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot perfiles
+		(type INSTANCE)
+;+		(allowed-classes)
 		(create-accessor read-write))
 	(single-slot cocina_indep
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot plazas_garaje
+		(type INTEGER)
+		(range 0 %3FVARIABLE)
+		(default 0)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -268,14 +313,14 @@
 (defclass Vivienda
 	(is-a USER)
 	(role concrete)
-	(single-slot precio
-		(type FLOAT)
-		(range 0.0 %3FVARIABLE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot inmobiliaria
 		(type INSTANCE)
 ;+		(allowed-classes Inmobiliaria)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot precio
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot dormitorios
@@ -287,12 +332,6 @@
 		(type INSTANCE)
 ;+		(allowed-classes Distrito)
 		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot B
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default TRUE)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot m2
 		(type FLOAT)
@@ -366,13 +405,13 @@
 		(allowed-values alto bajo medio)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot nombre
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot criminalidad
 		(type SYMBOL)
 		(allowed-values alto bajo medio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -396,11 +435,59 @@
 	(single-slot minusvalia
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot pref_chimenea
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot colegio_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot transporte_accesible
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot pref_jardin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot presupuesto
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot contaminacion_baja
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot estatus
+		(type SYMBOL)
+		(allowed-values alto bajo medio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot zona_verde_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gim_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot criminalidad_baja
@@ -416,26 +503,33 @@
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot pref_jardin
+	(single-slot poligono_comercial_cerca
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot centro_urbano_cerca
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot perfiles
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot parking
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Perfil
+	(is-a USER)
+	(role concrete)
 	(single-slot nombre
 		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot presupuesto
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot contaminacion_baja
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot estatus
-		(type SYMBOL)
-		(allowed-values alto bajo medio)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))

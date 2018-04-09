@@ -1,4 +1,4 @@
-; Sun Apr 08 00:57:54 GMT+01:00 2018
+; Sat Apr 07 17:23:44 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,16 +21,17 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[P8_ProjectKB_Class30077]
-		[P8_ProjectKB_Class30078]
-		[P8_ProjectKB_Class30079]
-		[P8_ProjectKB_Class30080]
-		[P8_ProjectKB_Class30081]
-		[P8_ProjectKB_Class30082]
-		[P8_ProjectKB_Class30083]
-		[P8_ProjectKB_Class30084]
-		[P8_ProjectKB_Class30085]
-		[P8_ProjectKB_Class30086]))
+		[P8_ProjectKB_Class10054]
+		[P8_ProjectKB_Class10055]
+		[P8_ProjectKB_Class10056]
+		[P8_ProjectKB_Class10057]
+		[P8_ProjectKB_Class10058]
+		[P8_ProjectKB_Class10059]
+		[P8_ProjectKB_Class10060]
+		[P8_ProjectKB_Class10061]
+		[P8_ProjectKB_Class10062]
+		[P8_ProjectKB_Class10063]
+		[P8_ProjectKB_Class10064]))
 
 ([CLSES_TAB] of  Widget
 
@@ -83,11 +84,11 @@
 ([KB_509949_Class1] of  Map
 
 	(entries
-		[P8_ProjectKB_Class30087]
-		[P8_ProjectKB_Class30088]
-		[P8_ProjectKB_Class30090]
-		[P8_ProjectKB_Class30091])
-	(referenced_maps [P8_ProjectKB_Class30089]))
+		[P8_ProjectKB_Class10065]
+		[P8_ProjectKB_Class10066]
+		[P8_ProjectKB_Class10068]
+		[P8_ProjectKB_Class10069])
+	(referenced_maps [P8_ProjectKB_Class10067]))
 
 ([KB_509949_Class100] of  String
 
@@ -181,7 +182,7 @@
 	(name "classes_file_name")
 	(string_value "P8.pont"))
 
-([KB_810375_Class5] of  Map
+([KB_609598_Class5] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -203,186 +204,91 @@
 ([P8_ProjectKB_Class10] of  Property_List
 )
 
-([P8_ProjectKB_Class10006] of  Widget
+([P8_ProjectKB_Class10054] of  String
 
-	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([P8_ProjectKB_Class10055] of  String
+
+	(name "Distrito")
+	(string_value "nombre"))
+
+([P8_ProjectKB_Class10056] of  String
+
 	(name "Cliente")
-	(property_list [P8_ProjectKB_Class10007])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+	(string_value "nombre"))
 
-([P8_ProjectKB_Class10007] of  Property_List
+([P8_ProjectKB_Class10057] of  String
 
-	(properties
-		[P8_ProjectKB_Class10008]
-		[P8_ProjectKB_Class10009]
-		[P8_ProjectKB_Class10011]
-		[P8_ProjectKB_Class10013]
-		[P8_ProjectKB_Class10015]
-		[P8_ProjectKB_Class10019]
-		[P8_ProjectKB_Class10021]
-		[P8_ProjectKB_Class10023]
-		[P8_ProjectKB_Class10025]
-		[P8_ProjectKB_Class10027]
-		[P8_ProjectKB_Class10029]))
+	(name "Perfil")
+	(string_value "nombre"))
 
-([P8_ProjectKB_Class10008] of  Property_List
+([P8_ProjectKB_Class10058] of  String
 
-	(name "layout properties"))
+	(name ":RULE")
+	(string_value "%3ADEFINITION-NAME"))
 
-([P8_ProjectKB_Class10009] of  Widget
+([P8_ProjectKB_Class10059] of  String
 
-	(height 60)
-	(is_hidden FALSE)
-	(name "minusvalia")
-	(property_list [P8_ProjectKB_Class10010])
-	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
-	(width 200)
-	(x 0)
-	(y 180))
+	(name ":FUNCTION")
+	(string_value "%3ADEFINITION-NAME"))
 
-([P8_ProjectKB_Class10010] of  Property_List
+([P8_ProjectKB_Class10060] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([P8_ProjectKB_Class10061] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([P8_ProjectKB_Class10062] of  String
+
+	(name "Vivienda")
+	(string_value "distrito{}inmobiliaria"))
+
+([P8_ProjectKB_Class10063] of  String
+
+	(name "Inmobiliaria")
+	(string_value "nombre"))
+
+([P8_ProjectKB_Class10064] of  String
+
+	(name ":JESS-DEFINITION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([P8_ProjectKB_Class10065] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([P8_ProjectKB_Class10066] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([P8_ProjectKB_Class10067] of  Map
 )
 
-([P8_ProjectKB_Class10011] of  Widget
+([P8_ProjectKB_Class10068] of  Map_Entry
 
-	(height 60)
-	(is_hidden FALSE)
-	(label "Class description/definition")
-	(name "pref_chimenea")
-	(property_list [P8_ProjectKB_Class10012])
-	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
-	(width 200)
-	(x 200)
-	(y 0))
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "P8_ProjectKB_Class10067")
+	(value_class "java.util.Map"))
 
-([P8_ProjectKB_Class10012] of  Property_List
-)
+([P8_ProjectKB_Class10069] of  Map_Entry
 
-([P8_ProjectKB_Class10013] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "criminalidad_baja")
-	(property_list [P8_ProjectKB_Class10014])
-	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
-	(width 200)
-	(x 0)
-	(y 120))
-
-([P8_ProjectKB_Class10014] of  Property_List
-)
-
-([P8_ProjectKB_Class10015] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "recomendaciones")
-	(property_list [P8_ProjectKB_Class10016])
-	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
-	(width 200)
-	(x 400)
-	(y 60))
-
-([P8_ProjectKB_Class10016] of  Property_List
-
-	(properties
-		[P8_ProjectKB_Class10017]
-		[P8_ProjectKB_Class10018]))
-
-([P8_ProjectKB_Class10017] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value"))
-
-([P8_ProjectKB_Class10018] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([P8_ProjectKB_Class10019] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "num_familiares")
-	(property_list [P8_ProjectKB_Class10020])
-	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
-	(width 100)
-	(x 200)
-	(y 120))
-
-([P8_ProjectKB_Class10020] of  Property_List
-)
-
-([P8_ProjectKB_Class10021] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "pref_jardin")
-	(property_list [P8_ProjectKB_Class10022])
-	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
-	(width 200)
-	(x 200)
-	(y 60))
-
-([P8_ProjectKB_Class10022] of  Property_List
-)
-
-([P8_ProjectKB_Class10023] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "presupuesto")
-	(property_list [P8_ProjectKB_Class10024])
-	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
-	(width 100)
-	(x 300)
-	(y 120))
-
-([P8_ProjectKB_Class10024] of  Property_List
-)
-
-([P8_ProjectKB_Class10025] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(label "Nombre")
-	(name "nombre")
-	(property_list [P8_ProjectKB_Class10026])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 0))
-
-([P8_ProjectKB_Class10026] of  Property_List
-)
-
-([P8_ProjectKB_Class10027] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "contaminacion_baja")
-	(property_list [P8_ProjectKB_Class10028])
-	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
-	(width 200)
-	(x 0)
-	(y 60))
-
-([P8_ProjectKB_Class10028] of  Property_List
-)
-
-([P8_ProjectKB_Class10029] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "estatus")
-	(property_list [P8_ProjectKB_Class10030])
-	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
-	(width 100)
-	(x 400)
-	(y 0))
-
-([P8_ProjectKB_Class10030] of  Property_List
-)
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([P8_ProjectKB_Class10077] of  Widget
 
@@ -1072,87 +978,6 @@
 ([P8_ProjectKB_Class30] of  Property_List
 )
 
-([P8_ProjectKB_Class30077] of  String
-
-	(name "Cliente")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30078] of  String
-
-	(name "Distrito")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30079] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([P8_ProjectKB_Class30080] of  String
-
-	(name ":FUNCTION")
-	(string_value "%3ADEFINITION-NAME"))
-
-([P8_ProjectKB_Class30081] of  String
-
-	(name ":RULE")
-	(string_value "%3ADEFINITION-NAME"))
-
-([P8_ProjectKB_Class30082] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([P8_ProjectKB_Class30083] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([P8_ProjectKB_Class30084] of  String
-
-	(name "Vivienda")
-	(string_value "distrito{}inmobiliaria"))
-
-([P8_ProjectKB_Class30085] of  String
-
-	(name "Inmobiliaria")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30086] of  String
-
-	(name ":JESS-DEFINITION")
-	(string_value "%3ADEFINITION-NAME"))
-
-([P8_ProjectKB_Class30087] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([P8_ProjectKB_Class30088] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([P8_ProjectKB_Class30089] of  Map
-)
-
-([P8_ProjectKB_Class30090] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "P8_ProjectKB_Class30089")
-	(value_class "java.util.Map"))
-
-([P8_ProjectKB_Class30091] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([P8_ProjectKB_Class31] of  Widget
 
 	(is_hidden TRUE)
@@ -1453,7 +1278,7 @@
 ([practica8_ProjectKB_Class101] of  String
 
 	(name "SearchTab_Query")
-	(string_value "Query Name: p-1\nMatch All:true\nLength: 4\nPiso	ascensor	is	Other:true	1	\nPiso	distrito	contains	Instance: | 	1	\nPiso	m2	is	null	\nPiso	precio	is	null	\n\nQuery Name: p-2\nMatch All:true\nLength: 4\nChalet	jardin	is	Other:true	1	\nChalet	chimenea	is	Other:true	1	\nChalet	plazas_garaje	is	Other:2	1	\nChalet	distrito	contains	Instance:practica8_Class2|Moncloa-Aravaca	1	\n\nQuery Name: p-3\nMatch All:true\nLength: 2\nPiso	inmobiliaria	contains	Query:es_online|es_online	1	\nPiso	distrito	contains	Instance:practica8_Class0|Latina	1	\n\nQuery Name: p-4\nMatch All:true\nLength: 3\nEstudio	cocina_indep	is	Other:true	1	\nEstudio	distrito	contains	Instance:practica8_Class3|Chamberí	1	\nEstudio	inmobiliaria	contains	Instance:practica8_Class8|TuCasa	1	\n\nQuery Name: p-6\nMatch All:true\nLength: 2\nVivienda	distrito	contains	Query:p-6.1|p-6.1	1	\nVivienda	dormitorios	is	Other:3	1	\n\nQuery Name: p-6.1\nMatch All:true\nLength: 2\nDistrito	contaminacion	is	Other:bajo	1	\nDistrito	criminalidad	is	Other:bajo	1	\n\nQuery Name: p-5.1\nMatch All:true\nLength: 2\nChalet	precio	is greater than	Other:1000000	1	\nChalet	inmobiliaria	contains	Query:es_online|es_online	1	\n\nQuery Name: es_online\nMatch All:true\nLength: 1\nInmobiliaria	online	is	Other:true	1	\n\nQuery Name: p-5\nMatch All:true\nLength: 1\nDistrito	viviendas	contains	Query:p-5.1|p-5.1	1	\n\nQuery Name: p-7\nMatch All:false\nLength: 4\nChalet	 	Other:	null	\nPiso	planta	is	Other:bajo	1	\nPiso	ascensor	is	Other:true	1	\nEstudio	ascensor	is	Other:true	1	\n\n"))
+	(string_value "Query Name: p-1\nMatch All:true\nLength: 4\nPiso	ascensor	is	Other:true	1	\nPiso	distrito	contains	Instance:practica8_Class4|Arganzuela	1	\nPiso	m2	is greater than	Other:70	1	\nPiso	precio	is less than	Other:300000	1	\n\nQuery Name: p-2\nMatch All:true\nLength: 4\nChalet	jardin	is	Other:true	1	\nChalet	chimenea	is	Other:true	1	\nChalet	plazas_garaje	is	Other:2	1	\nChalet	distrito	contains	Instance:practica8_Class2|Moncloa-Aravaca	1	\n\nQuery Name: p-3\nMatch All:true\nLength: 2\nPiso	inmobiliaria	contains	Query:es_online|es_online	1	\nPiso	distrito	contains	Instance:practica8_Class0|Latina	1	\n\nQuery Name: p-4\nMatch All:true\nLength: 3\nEstudio	cocina_indep	is	Other:true	1	\nEstudio	distrito	contains	Instance:practica8_Class3|Chamberí	1	\nEstudio	inmobiliaria	contains	Instance:practica8_Class8|TuCasa	1	\n\nQuery Name: p-6\nMatch All:true\nLength: 2\nVivienda	distrito	contains	Query:p-6.1|p-6.1	1	\nVivienda	dormitorios	is	Other:3	1	\n\nQuery Name: p-6.1\nMatch All:true\nLength: 2\nDistrito	contaminacion	is	Other:bajo	1	\nDistrito	criminalidad	is	Other:bajo	1	\n\nQuery Name: p-5.1\nMatch All:true\nLength: 2\nChalet	precio	is greater than	Other:1000000	1	\nChalet	inmobiliaria	contains	Query:es_online|es_online	1	\n\nQuery Name: es_online\nMatch All:true\nLength: 1\nInmobiliaria	online	is	Other:true	1	\n\nQuery Name: p-5\nMatch All:true\nLength: 1\nDistrito	viviendas	contains	Query:p-5.1|p-5.1	1	\n\nQuery Name: p-7\nMatch All:false\nLength: 4\nChalet	 	Other:	null	\nPiso	planta	is	Other:bajo	1	\nPiso	ascensor	is	Other:true	1	\nEstudio	ascensor	is	Other:true	1	\n\n"))
 
 ([practica8_ProjectKB_Class84] of  Property_List
 
@@ -1466,7 +1291,6 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[P8_ProjectKB_Class10006]
 		[P8_ProjectKB_Class10077]
 		[P8_ProjectKB_Class10132]
 		[P8_ProjectKB_Class10170]
@@ -1478,8 +1302,8 @@
 		[P8_ProjectKB_Class10111]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[P8_ProjectKB_Class10191]
-		[P8_ProjectKB_Class10212]
-		[STANDARD_SLOT_FORM_WIDGET])
+		[STANDARD_SLOT_FORM_WIDGET]
+		[P8_ProjectKB_Class10212])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
