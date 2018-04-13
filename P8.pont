@@ -1,4 +1,4 @@
-; Mon Apr 09 17:55:24 CEST 2018
+; Fri Apr 13 12:26:07 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -10,6 +10,7 @@
 	(single-slot pref_chimenea
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot viviendas
@@ -24,9 +25,15 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot vivienda
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot zonas_verdes
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot num_familiares
@@ -36,10 +43,6 @@
 	(single-slot num_colegios
 		(type INTEGER)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot Viviendas_Necesiades_ConPerfil
-		(type INSTANCE)
-;+		(allowed-classes Vivienda)
 		(create-accessor read-write))
 	(single-slot colegio_cerca
 		(type SYMBOL)
@@ -51,6 +54,10 @@
 		(type FLOAT)
 		(range 0.0 %3FVARIABLE)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot NyP
+		(type INSTANCE)
+;+		(allowed-classes)
 		(create-accessor read-write))
 	(single-slot dormitorios
 		(type INTEGER)
@@ -68,13 +75,14 @@
 ;+		(allowed-classes Vivienda)
 		(create-accessor read-write))
 	(single-slot criminalidad
-		(type SYMBOL)
-		(allowed-values alto bajo medio)
+		(type INTEGER)
+		(range 0 2)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot contaminacion_baja
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot estatus
@@ -93,6 +101,10 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot valoracion
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3ADEFINITION-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
@@ -107,10 +119,23 @@
 		(type INSTANCE)
 ;+		(allowed-classes Vivienda)
 		(create-accessor read-write))
+	(single-slot puntos
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Perfiles
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot pref_jardin
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot vncp
+		(type INSTANCE)
+;+		(allowed-classes Vivienda)
 		(create-accessor read-write))
 	(single-slot presupuesto
 		(type FLOAT)
@@ -129,9 +154,14 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot cliente
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot criminalidad_baja
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot recomendaciones
@@ -160,6 +190,10 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot perfil
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot transporte_accesible
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
@@ -179,8 +213,8 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot contaminacion
-		(type SYMBOL)
-		(allowed-values alto bajo medio)
+		(type INTEGER)
+		(range 0 2)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot nombre
@@ -354,6 +388,10 @@
 		(type FLOAT)
 		(range 5.0 %3FVARIABLE)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot perfiles
+		(type INSTANCE)
+;+		(allowed-classes)
 		(create-accessor read-write)))
 
 (defclass Piso
@@ -409,38 +447,6 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass Distrito
-	(is-a USER)
-	(role concrete)
-	(single-slot zonas_verdes
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot viviendas
-		(type INSTANCE)
-;+		(allowed-classes)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot num_colegios
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot contaminacion
-		(type SYMBOL)
-		(allowed-values alto bajo medio)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot nombre
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot criminalidad
-		(type SYMBOL)
-		(allowed-values alto bajo medio)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
 (defclass Inmobiliaria
 	(is-a USER)
 	(role concrete)
@@ -473,6 +479,7 @@
 	(single-slot pref_chimenea
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot transporte_accesible
@@ -481,9 +488,14 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot NyP
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
 	(single-slot pref_jardin
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot nombre
@@ -497,6 +509,7 @@
 	(single-slot contaminacion_baja
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot estatus
@@ -519,6 +532,7 @@
 	(single-slot criminalidad_baja
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot recomendaciones
@@ -552,30 +566,68 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
+(defclass Distrito
+	(is-a USER)
+	(role concrete)
+	(single-slot zonas_verdes
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot viviendas
+		(type INSTANCE)
+;+		(allowed-classes)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot num_colegios
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot contaminacion
+		(type INTEGER)
+		(range 0 2)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot criminalidad
+		(type INTEGER)
+		(range 0 2)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
 (defclass Perfil
 	(is-a USER)
 	(role concrete)
+	(single-slot valoracion
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot nombre
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass Necesidades_Perfil
+(defclass vivienda_perfil_puntos
 	(is-a USER)
 	(role concrete)
-	(multislot Viviendas_Necesidades
-		(type INSTANCE)
-;+		(allowed-classes Vivienda)
-		(create-accessor read-write))
-	(multislot Viviendas_Necesidades_SinPerfil
-		(type INSTANCE)
-;+		(allowed-classes Vivienda)
-		(create-accessor read-write))
-	(single-slot nombre
+	(single-slot cliente
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot Viviendas_Necesiades_ConPerfil
+	(single-slot puntos
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot perfil
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot vivienda
 		(type INSTANCE)
-;+		(allowed-classes Vivienda)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
