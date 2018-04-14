@@ -1,4 +1,4 @@
-; Fri Apr 13 12:26:07 CEST 2018
+; Sat Apr 14 16:48:15 GMT+01:00 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,21 +20,26 @@
 
 ([P8_Class10016] of  Cliente
 
-	(centro_urbano_cerca FALSE)
-	(colegio_cerca FALSE)
+	(centro_urbano_cerca TRUE)
+	(colegio_cerca TRUE)
 	(contaminacion_baja FALSE)
 	(criminalidad_baja FALSE)
 	(gim_cerca FALSE)
-	(minusvalia FALSE)
+	(minusvalia TRUE)
 	(nombre "pepe")
+	(num_familiares 2)
 	(parking FALSE)
-	(perfiles [P8_Class10123])
+	(perfiles [P8_Class10127])
 	(poligono_comercial_cerca FALSE)
 	(pref_chimenea FALSE)
 	(pref_jardin FALSE)
-	(recomendaciones [practica8_Class10020])
+	(presupuesto 200000.0)
+	(recomendaciones
+		[practica8_Class11]
+		[practica8_Class10027]
+		[practica8_Class10019])
 	(transporte_accesible FALSE)
-	(zona_verde_cerca FALSE))
+	(zona_verde_cerca TRUE))
 
 ([P8_Class10017] of  Perfil
 
@@ -78,18 +83,35 @@
 	(gim_cerca TRUE)
 	(minusvalia FALSE)
 	(nombre "jose")
+	(num_familiares 2)
 	(parking FALSE)
 	(perfiles [P8_Class10019])
 	(poligono_comercial_cerca FALSE)
 	(pref_jardin TRUE)
+	(presupuesto 1000000.0)
 	(recomendaciones
-		[P8_Class3]
-		[practica8_Class10020])
+		[practica8_Class11]
+		[practica8_Class10029]
+		[P8_Class8]
+		[practica8_Class10028]
+		[practica8_Class10027]
+		[P8_Class6]
+		[practica8_Class10026]
+		[P8_Class5]
+		[P8_Class4]
+		[P8_Class2]
+		[P8_Class1]
+		[practica8_Class10021]
+		[practica8_Class10020]
+		[practica8_Class9]
+		[practica8_Class10019]
+		[practica8_Class10017])
 	(transporte_accesible FALSE)
 	(zona_verde_cerca TRUE))
 
 ([P8_Class16] of  Cliente
 
+	(centro_urbano_cerca FALSE)
 	(contaminacion_baja TRUE)
 	(criminalidad_baja FALSE)
 	(gim_cerca TRUE)
@@ -99,7 +121,24 @@
 	(perfiles [P8_Class10018])
 	(pref_jardin TRUE)
 	(presupuesto 3003000.0)
-	(recomendaciones [practica8_Class10018])
+	(recomendaciones
+		[practica8_Class11]
+		[practica8_Class10029]
+		[P8_Class8]
+		[practica8_Class10028]
+		[practica8_Class10027]
+		[P8_Class6]
+		[practica8_Class10026]
+		[P8_Class5]
+		[P8_Class4]
+		[P8_Class2]
+		[practica8_Class10022]
+		[P8_Class1]
+		[practica8_Class10021]
+		[practica8_Class10020]
+		[practica8_Class9]
+		[practica8_Class10019]
+		[practica8_Class10017])
 	(zona_verde_cerca TRUE))
 
 ([P8_Class2] of  Piso
@@ -113,9 +152,6 @@
 	(planta primero)
 	(precio 275000.0))
 
-([P8_Class20017] of  vivienda_perfil_puntos
-)
-
 ([P8_Class20052] of  Cliente
 
 	(centro_urbano_cerca FALSE)
@@ -125,14 +161,16 @@
 	(gim_cerca FALSE)
 	(minusvalia FALSE)
 	(nombre "fran")
+	(num_familiares 3)
 	(parking FALSE)
 	(perfiles [P8_Class10017])
 	(poligono_comercial_cerca FALSE)
 	(pref_chimenea FALSE)
 	(pref_jardin TRUE)
+	(presupuesto 100000.0)
 	(recomendaciones
-		[practica8_Class10028]
-		[practica8_Class10027])
+		[practica8_Class10021]
+		[practica8_Class10019])
 	(transporte_accesible FALSE)
 	(zona_verde_cerca FALSE))
 
