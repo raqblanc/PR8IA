@@ -6,9 +6,6 @@
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;; PERFIL DEPORTISTA ;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defrule PerfilDeportista1
 
@@ -70,10 +67,6 @@
 )
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;; PERFIL RURAL ;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 (defrule PerfilRural1
 
 
@@ -134,9 +127,7 @@
 )
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;; PERFIL COMERCIAL ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 (defrule PerfilComercial3
 
@@ -198,9 +189,6 @@
 )
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;; PERFIL FAMILIAR ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defrule PerfilFamiliar3
 
@@ -214,7 +202,7 @@
 
 (defrule PerfilFamiliar2
 
-	(object (is-a Cliente)(contaminacion_baja FALSE)(criminalidad_baja TRUE)(pref_jardin FALSE)(parking TRUE)(colegio_cerca TRUE)(transporte_accesible TRUE)(perfiles $?pe)(OBJECT ?c))
+	(object (is-a Cliente)(contaminacion_baja TRUE)(criminalidad_baja TRUE)(pref_jardin TRUE)(parking TRUE)(colegio_cerca TRUE)(transporte_accesible FALSE)(perfiles $?pe)(OBJECT ?c))
 	(object (is-a Perfil)(nombre "familiar")(valoracion 2)(OBJECT ?p))
 	(test (not (member$ ?p ?pe)))
 	=>
@@ -256,9 +244,7 @@
 )
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;; PERFIL EMPRESARIO ;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 (defrule PerfilEmpresario3
 
