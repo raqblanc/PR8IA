@@ -45,22 +45,26 @@
 	(slot-insert$ ?c perfiles 1 ?p)
 	
 )
-;ninguno de los anteriores
+
 (defrule PerfilDeportista0
+	(declare(salience -100))
 	
-	
-	(object (is-a Cliente)  (perfiles $?pe ) (pref_jardin FALSE) (contaminacion_baja FALSE) (zona_verde_cerca FALSE) (gim_cerca FALSE) (criminalidad_baja FALSE) (OBJECT ?c))
+	(object (is-a Cliente)  (perfiles $?pe ) (pref_jardin ?j) (contaminacion_baja ?cb) (zona_verde_cerca ?zv) (gim_cerca ?gc) (criminalidad_baja ?crb) (OBJECT ?c))
 	
 	
 	(object(is-a Perfil)(OBJECT ?p1)(nombre "deportista")(valoracion 1))
-	(object(is-a Perfil)(OBJECT ?p2)(nombre "deportista")(valoracion 2))
-	(object(is-a Perfil)(OBJECT ?p3)(nombre "deportista")(valoracion 3))
-	(object(is-a Perfil)(OBJECT ?p0)(nombre "deportista")(valoracion 0))
-	
 	(test (not (member$ ?p1 ?pe)))
+	(object(is-a Perfil)(OBJECT ?p2)(nombre "deportista")(valoracion 2))
 	(test (not (member$ ?p2 ?pe)))
+	(object(is-a Perfil)(OBJECT ?p3)(nombre "deportista")(valoracion 3))
 	(test (not (member$ ?p3 ?pe)))
+	(object(is-a Perfil)(OBJECT ?p0)(nombre "deportista")(valoracion 0))
 	(test (not (member$ ?p0 ?pe)))
+	
+	
+	
+	
+	
 	
 	(object(is-a Perfil)(OBJECT ?p)(nombre "deportista")(valoracion 0))
 	=>

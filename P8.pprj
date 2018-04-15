@@ -1,4 +1,4 @@
-; Sat Apr 14 16:48:15 GMT+01:00 2018
+; Sun Apr 15 10:08:22 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,7 +21,6 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[P8_ProjectKB_Class20137]
 		[P8_ProjectKB_Class20138]
 		[P8_ProjectKB_Class20139]
 		[P8_ProjectKB_Class20140]
@@ -32,7 +31,8 @@
 		[P8_ProjectKB_Class20145]
 		[P8_ProjectKB_Class20146]
 		[P8_ProjectKB_Class20147]
-		[P8_ProjectKB_Class20148]))
+		[P8_ProjectKB_Class20148]
+		[P8_ProjectKB_Class20149]))
 
 ([CLSES_TAB] of  Widget
 
@@ -85,11 +85,11 @@
 ([KB_509949_Class1] of  Map
 
 	(entries
-		[P8_ProjectKB_Class20149]
 		[P8_ProjectKB_Class20150]
-		[P8_ProjectKB_Class20152]
-		[P8_ProjectKB_Class20153])
-	(referenced_maps [P8_ProjectKB_Class20151]))
+		[P8_ProjectKB_Class20151]
+		[P8_ProjectKB_Class20153]
+		[P8_ProjectKB_Class20154])
+	(referenced_maps [P8_ProjectKB_Class20152]))
 
 ([KB_509949_Class100] of  String
 
@@ -183,7 +183,7 @@
 	(name "classes_file_name")
 	(string_value "P8.pont"))
 
-([KB_845332_Class5] of  Map
+([KB_954102_Class5] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -842,30 +842,25 @@
 ([P8_ProjectKB_Class20] of  Property_List
 )
 
-([P8_ProjectKB_Class20137] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
 ([P8_ProjectKB_Class20138] of  String
-
-	(name "Distrito")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class20139] of  String
 
 	(name "Cliente")
 	(string_value "nombre"))
 
+([P8_ProjectKB_Class20139] of  String
+
+	(name "Distrito")
+	(string_value "nombre"))
+
 ([P8_ProjectKB_Class20140] of  String
 
-	(name "Perfil")
-	(string_value "nombre"))
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
 
 ([P8_ProjectKB_Class20141] of  String
 
-	(name ":RULE")
-	(string_value "%3ADEFINITION-NAME"))
+	(name "Perfil")
+	(string_value "nombre"))
 
 ([P8_ProjectKB_Class20142] of  String
 
@@ -874,8 +869,8 @@
 
 ([P8_ProjectKB_Class20143] of  String
 
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
+	(name ":RULE")
+	(string_value "%3ADEFINITION-NAME"))
 
 ([P8_ProjectKB_Class20144] of  String
 
@@ -884,8 +879,8 @@
 
 ([P8_ProjectKB_Class20145] of  String
 
-	(name "Vivienda")
-	(string_value "distrito{}inmobiliaria"))
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
 ([P8_ProjectKB_Class20146] of  String
 
@@ -894,39 +889,44 @@
 
 ([P8_ProjectKB_Class20147] of  String
 
+	(name "Vivienda")
+	(string_value "distrito{}inmobiliaria"))
+
+([P8_ProjectKB_Class20148] of  String
+
 	(name "Inmobiliaria")
 	(string_value "nombre"))
 
-([P8_ProjectKB_Class20148] of  String
+([P8_ProjectKB_Class20149] of  String
 
 	(name ":JESS-DEFINITION")
 	(string_value "%3ADEFINITION-NAME"))
 
-([P8_ProjectKB_Class20149] of  Map_Entry
+([P8_ProjectKB_Class20150] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([P8_ProjectKB_Class20150] of  Map_Entry
+([P8_ProjectKB_Class20151] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([P8_ProjectKB_Class20151] of  Map
+([P8_ProjectKB_Class20152] of  Map
 )
 
-([P8_ProjectKB_Class20152] of  Map_Entry
+([P8_ProjectKB_Class20153] of  Map_Entry
 
 	(key "InstanceDisplay.yellow_stickies")
 	(key_class "java.lang.String")
-	(value "P8_ProjectKB_Class20151")
+	(value "P8_ProjectKB_Class20152")
 	(value_class "java.util.Map"))
 
-([P8_ProjectKB_Class20153] of  Map_Entry
+([P8_ProjectKB_Class20154] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
