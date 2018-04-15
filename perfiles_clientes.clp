@@ -297,7 +297,7 @@
 (defrule PerfilEmpresario0
 	(declare(salience -100))
 
-	(object (is-a Cliente)  (perfiles $?pe ) (pref_jardin ?j) (contaminacion_baja ?cb) (zona_verde_cerca ?zv) (gim_cerca ?gc) (criminalidad_baja ?crb) (OBJECT ?c)va)
+	(object (is-a Cliente)  (perfiles $?pe ) (pref_jardin ?j) (contaminacion_baja ?cb) (zona_verde_cerca ?zv) (gim_cerca ?gc) (criminalidad_baja ?crb) (OBJECT ?c))
 
 
 	(object(is-a Perfil)(OBJECT ?p1)(nombre "empresario")(valoracion 1))

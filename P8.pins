@@ -1,4 +1,4 @@
-; Sun Apr 15 16:25:44 GMT+01:00 2018
+; Sun Apr 15 17:31:07 GMT+01:00 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -33,32 +33,10 @@
 	(nombre "pepe")
 	(num_familiares 2)
 	(parking TRUE)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10123]
-		[P8_Class10125]
-		[P8_Class10126]
-		[P8_Class10005])
 	(poligono_comercial_cerca FALSE)
 	(pref_chimenea FALSE)
 	(pref_jardin FALSE)
 	(presupuesto 500000.0)
-	(recomendaciones
-		[practica8_Class11]
-		[practica8_Class10029]
-		[P8_Class8]
-		[practica8_Class10028]
-		[practica8_Class10027]
-		[P8_Class6]
-		[practica8_Class10026]
-		[P8_Class5]
-		[P8_Class4]
-		[P8_Class2]
-		[practica8_Class10021]
-		[practica8_Class10020]
-		[practica8_Class9]
-		[practica8_Class10019]
-		[practica8_Class10017])
 	(transporte_accesible TRUE)
 	(zona_verde_cerca FALSE))
 
@@ -148,72 +126,11 @@
 	(nombre "jose")
 	(num_familiares 2)
 	(parking FALSE)
-	(perfiles
-		[P8_Class10123]
-		[P8_Class10125]
-		[P8_Class10126]
-		[P8_Class10127]
-		[P8_Class30127])
 	(poligono_comercial_cerca FALSE)
 	(pref_chimenea TRUE)
 	(pref_jardin TRUE)
 	(presupuesto 1000000.0)
-	(recomendaciones
-		[practica8_Class11]
-		[practica8_Class10029]
-		[P8_Class8]
-		[practica8_Class10028]
-		[practica8_Class10027]
-		[P8_Class6]
-		[practica8_Class10026]
-		[P8_Class5]
-		[P8_Class4]
-		[P8_Class2]
-		[P8_Class1]
-		[practica8_Class10021]
-		[practica8_Class10020]
-		[practica8_Class9]
-		[practica8_Class10019]
-		[practica8_Class10017])
 	(transporte_accesible FALSE)
-	(zona_verde_cerca TRUE))
-
-([P8_Class16] of  Cliente
-
-	(centro_urbano_cerca FALSE)
-	(contaminacion_baja TRUE)
-	(criminalidad_baja TRUE)
-	(gim_cerca TRUE)
-	(minusvalia FALSE)
-	(nombre "juan")
-	(num_familiares 2)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10126]
-		[P8_Class10127]
-		[P8_Class10019])
-	(pref_chimenea TRUE)
-	(pref_jardin TRUE)
-	(presupuesto 3003000.0)
-	(recomendaciones
-		[practica8_Class11]
-		[practica8_Class10029]
-		[P8_Class8]
-		[practica8_Class10028]
-		[practica8_Class10027]
-		[P8_Class6]
-		[practica8_Class10026]
-		[P8_Class5]
-		[P8_Class4]
-		[P8_Class2]
-		[practica8_Class10022]
-		[P8_Class1]
-		[practica8_Class10021]
-		[practica8_Class10020]
-		[practica8_Class9]
-		[practica8_Class10019]
-		[practica8_Class10017])
 	(zona_verde_cerca TRUE))
 
 ([P8_Class2] of  Piso
@@ -223,12 +140,6 @@
 	(dormitorios 3)
 	(inmobiliaria [practica8_Class6])
 	(m2 80.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(planta primero)
 	(precio 275000.0))
 
@@ -243,19 +154,10 @@
 	(nombre "fran")
 	(num_familiares 3)
 	(parking FALSE)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10126]
-		[P8_Class10127]
-		[P8_Class10019])
 	(poligono_comercial_cerca FALSE)
 	(pref_chimenea FALSE)
 	(pref_jardin TRUE)
 	(presupuesto 100000.0)
-	(recomendaciones
-		[practica8_Class10021]
-		[practica8_Class10019])
 	(transporte_accesible FALSE)
 	(zona_verde_cerca TRUE))
 
@@ -267,15 +169,25 @@
 	(dormitorios 0)
 	(inmobiliaria [practica8_Class7])
 	(m2 56.0)
-	(perfiles
-		[P8_Class30128]
-		[P8_Class30125]
-		[P8_Class10008]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10019])
 	(precio 200000.0))
+
+([P8_Class30069] of  Cliente
+
+	(centro_urbano_cerca FALSE)
+	(colegio_cerca FALSE)
+	(contaminacion_baja TRUE)
+	(criminalidad_baja TRUE)
+	(gim_cerca TRUE)
+	(minusvalia FALSE)
+	(nombre "juanito")
+	(num_familiares 2)
+	(parking FALSE)
+	(poligono_comercial_cerca FALSE)
+	(pref_chimenea TRUE)
+	(pref_jardin TRUE)
+	(presupuesto 800000.0)
+	(transporte_accesible FALSE)
+	(zona_verde_cerca TRUE))
 
 ([P8_Class30125] of  Perfil
 
@@ -304,14 +216,6 @@
 	(dormitorios 4)
 	(inmobiliaria [practica8_Class7])
 	(m2 180.0)
-	(perfiles
-		[P8_Class30128]
-		[P8_Class30125]
-		[P8_Class10008]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10019])
 	(planta primero)
 	(precio 280000.0))
 
@@ -333,12 +237,6 @@
 	(dormitorios 2)
 	(inmobiliaria [practica8_Class5])
 	(m2 100.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(planta primero)
 	(precio 340000.0))
 
@@ -350,12 +248,6 @@
 	(dormitorios 1)
 	(inmobiliaria [practica8_Class8])
 	(m2 55.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(precio 120000.0))
 
 ([P8_Class8] of  Piso
@@ -365,27 +257,23 @@
 	(dormitorios 3)
 	(inmobiliaria [practica8_Class8])
 	(m2 150.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(planta bajo)
 	(precio 228000.0))
 
 ([practica8_Class0] of  Distrito
 
-	(contaminacion 1)
-	(criminalidad 2)
+	(contaminacion 2)
+	(criminalidad 0)
 	(nombre "Latina")
+	(num_colegios 1)
 	(viviendas
 		[practica8_Class10019]
 		[practica8_Class10027]
 		[practica8_Class10017]
 		[practica8_Class10029]
 		[P8_Class5]
-		[P8_Class7]))
+		[P8_Class7])
+	(zonas_verdes FALSE))
 
 ([practica8_Class10017] of  Piso
 
@@ -394,12 +282,6 @@
 	(dormitorios 2)
 	(inmobiliaria [practica8_Class8])
 	(m2 72.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(planta primero)
 	(precio 100000.0))
 
@@ -411,12 +293,6 @@
 	(dormitorios 0)
 	(inmobiliaria [practica8_Class8])
 	(m2 50.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10123]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126])
 	(precio 57000.0))
 
 ([practica8_Class10019] of  Chalet
@@ -448,14 +324,6 @@
 	(dormitorios 3)
 	(inmobiliaria [practica8_Class7])
 	(m2 100.0)
-	(perfiles
-		[P8_Class30128]
-		[P8_Class30125]
-		[P8_Class10008]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10019])
 	(planta segundo)
 	(precio 100000.0))
 
@@ -478,12 +346,6 @@
 	(dormitorios 1)
 	(inmobiliaria [practica8_Class7])
 	(m2 54.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10123]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126])
 	(precio 45000.0))
 
 ([practica8_Class10025] of  Estudio
@@ -494,14 +356,6 @@
 	(dormitorios 1)
 	(inmobiliaria [practica8_Class7])
 	(m2 77.0)
-	(perfiles
-		[P8_Class30128]
-		[P8_Class30125]
-		[P8_Class10008]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10019])
 	(precio 70000.0))
 
 ([practica8_Class10026] of  Chalet
@@ -523,12 +377,6 @@
 	(dormitorios 2)
 	(inmobiliaria [practica8_Class6])
 	(m2 120.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10123]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126])
 	(precio 130000.0))
 
 ([practica8_Class10028] of  Piso
@@ -538,14 +386,6 @@
 	(dormitorios 2)
 	(inmobiliaria [practica8_Class6])
 	(m2 120.0)
-	(perfiles
-		[P8_Class30128]
-		[P8_Class30125]
-		[P8_Class10008]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10019])
 	(planta tercero)
 	(precio 231000.0))
 
@@ -556,12 +396,6 @@
 	(dormitorios 3)
 	(inmobiliaria [practica8_Class6])
 	(m2 111.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(planta bajo)
 	(precio 243000.0))
 
@@ -572,12 +406,6 @@
 	(dormitorios 2)
 	(inmobiliaria [practica8_Class5])
 	(m2 95.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126]
-		[P8_Class10123])
 	(planta segundo)
 	(precio 200000.0))
 
@@ -589,12 +417,6 @@
 	(dormitorios 1)
 	(inmobiliaria [practica8_Class5])
 	(m2 70.0)
-	(perfiles
-		[P8_Class30125]
-		[P8_Class10123]
-		[P8_Class10125]
-		[P8_Class10127]
-		[P8_Class10126])
 	(precio 75000.0))
 
 ([practica8_Class2] of  Distrito
@@ -602,6 +424,7 @@
 	(contaminacion 0)
 	(criminalidad 0)
 	(nombre "Moncloa-Aravaca")
+	(num_colegios 0)
 	(viviendas
 		[practica8_Class10021]
 		[practica8_Class10028]
@@ -617,24 +440,28 @@
 	(contaminacion 1)
 	(criminalidad 1)
 	(nombre "Chamberí")
+	(num_colegios 0)
 	(viviendas
 		[practica8_Class10022]
 		[practica8_Class10018]
 		[practica8_Class15]
 		[P8_Class1]
 		[P8_Class2]
-		[P8_Class8]))
+		[P8_Class8])
+	(zonas_verdes TRUE))
 
 ([practica8_Class4] of  Distrito
 
 	(contaminacion 2)
 	(criminalidad 1)
 	(nombre "Arganzuela")
+	(num_colegios 0)
 	(viviendas
 		[practica8_Class10024]
 		[practica8_Class11]
 		[practica8_Class10026]
-		[P8_Class6]))
+		[P8_Class6])
+	(zonas_verdes TRUE))
 
 ([practica8_Class5] of  Inmobiliaria
 

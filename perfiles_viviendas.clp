@@ -71,7 +71,7 @@
 
 
  (defrule ViviendaDeportista0
-
+	(declare(salience -100))
 	(object (OBJECT ?b)(distrito ?dis)(perfiles $?per))
     (test (member$ Vivienda(class-superclasses (class ?b) inherit) ))
 
@@ -156,7 +156,7 @@
 
 
 		 (defrule ViviendaRural0
-
+	(declare(salience -100))
 	 	 (object (OBJECT ?b)(distrito ?dis)(perfiles $?per))
 	 	 (test (member$ Vivienda(class-superclasses (class ?b) inherit) ))
 
@@ -241,7 +241,7 @@
 					 )
 
 					 (defrule ViviendaFamiliar0
-
+	(declare(salience -100))
 						(object (OBJECT ?b)(distrito ?dis)(perfiles $?per))
 					  (test (member$ Vivienda(class-superclasses (class ?b) inherit) ))
 
@@ -326,7 +326,7 @@
 	)
 
 	(defrule ViviendaComercial0
-
+	(declare(salience -100))
 	 (object (OBJECT ?b)(distrito ?dis)(perfiles $?per))
 	 (test (member$ Vivienda(class-superclasses (class ?b) inherit) ))
 
@@ -395,7 +395,7 @@
 
 )
 
-(defrule ViviendaEmpresario2
+(defrule ViviendaEmpresario1
 
 	(object (OBJECT ?b)(distrito ?dis)(perfiles $?per))
 	(test (member$ Vivienda(class-superclasses (class ?b) inherit) ))
@@ -415,7 +415,7 @@
 )
 
 (defrule ViviendaEmpresario0
-
+	(declare(salience -100))
  (object (OBJECT ?b)(distrito ?dis)(perfiles $?per))
  (test (member$ Vivienda(class-superclasses (class ?b) inherit) ))
 

@@ -1,4 +1,4 @@
-; Sun Apr 15 16:25:44 GMT+01:00 2018
+; Sun Apr 15 17:31:07 GMT+01:00 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,18 +21,18 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[P8_ProjectKB_Class30127]
-		[P8_ProjectKB_Class30128]
-		[P8_ProjectKB_Class30129]
-		[P8_ProjectKB_Class30130]
-		[P8_ProjectKB_Class30131]
-		[P8_ProjectKB_Class30132]
-		[P8_ProjectKB_Class30133]
-		[P8_ProjectKB_Class30134]
-		[P8_ProjectKB_Class30135]
-		[P8_ProjectKB_Class30136]
-		[P8_ProjectKB_Class30137]
-		[P8_ProjectKB_Class30138]))
+		[P8_ProjectKB_Class20182]
+		[P8_ProjectKB_Class20183]
+		[P8_ProjectKB_Class20184]
+		[P8_ProjectKB_Class20185]
+		[P8_ProjectKB_Class20186]
+		[P8_ProjectKB_Class20187]
+		[P8_ProjectKB_Class20188]
+		[P8_ProjectKB_Class20189]
+		[P8_ProjectKB_Class20190]
+		[P8_ProjectKB_Class20191]
+		[P8_ProjectKB_Class20192]
+		[P8_ProjectKB_Class20193]))
 
 ([CLSES_TAB] of  Widget
 
@@ -85,11 +85,11 @@
 ([KB_509949_Class1] of  Map
 
 	(entries
-		[P8_ProjectKB_Class30139]
-		[P8_ProjectKB_Class30140]
-		[P8_ProjectKB_Class30142]
-		[P8_ProjectKB_Class30143])
-	(referenced_maps [P8_ProjectKB_Class30141]))
+		[P8_ProjectKB_Class20194]
+		[P8_ProjectKB_Class20195]
+		[P8_ProjectKB_Class20197]
+		[P8_ProjectKB_Class20198])
+	(referenced_maps [P8_ProjectKB_Class20196]))
 
 ([KB_509949_Class100] of  String
 
@@ -183,7 +183,7 @@
 	(name "classes_file_name")
 	(string_value "P8.pont"))
 
-([KB_924315_Class5] of  Map
+([KB_886314_Class5] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -842,6 +842,97 @@
 ([P8_ProjectKB_Class20] of  Property_List
 )
 
+([P8_ProjectKB_Class20182] of  String
+
+	(name "Cliente")
+	(string_value "nombre"))
+
+([P8_ProjectKB_Class20183] of  String
+
+	(name "Distrito")
+	(string_value "nombre"))
+
+([P8_ProjectKB_Class20184] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([P8_ProjectKB_Class20185] of  String
+
+	(name "Perfil")
+	(string_value "nombre"))
+
+([P8_ProjectKB_Class20186] of  String
+
+	(name ":FUNCTION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([P8_ProjectKB_Class20187] of  String
+
+	(name ":RULE")
+	(string_value "%3ADEFINITION-NAME"))
+
+([P8_ProjectKB_Class20188] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([P8_ProjectKB_Class20189] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([P8_ProjectKB_Class20190] of  String
+
+	(name "vivienda_perfil_puntos")
+	(string_value "cliente"))
+
+([P8_ProjectKB_Class20191] of  String
+
+	(name "Vivienda")
+	(string_value "distrito{}inmobiliaria"))
+
+([P8_ProjectKB_Class20192] of  String
+
+	(name "Inmobiliaria")
+	(string_value "nombre"))
+
+([P8_ProjectKB_Class20193] of  String
+
+	(name ":JESS-DEFINITION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([P8_ProjectKB_Class20194] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([P8_ProjectKB_Class20195] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([P8_ProjectKB_Class20196] of  Map
+)
+
+([P8_ProjectKB_Class20197] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "P8_ProjectKB_Class20196")
+	(value_class "java.util.Map"))
+
+([P8_ProjectKB_Class20198] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([P8_ProjectKB_Class21] of  Widget
 
 	(is_hidden TRUE)
@@ -892,97 +983,6 @@
 
 ([P8_ProjectKB_Class30] of  Property_List
 )
-
-([P8_ProjectKB_Class30127] of  String
-
-	(name "Cliente")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30128] of  String
-
-	(name "Distrito")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30129] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([P8_ProjectKB_Class30130] of  String
-
-	(name "Perfil")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30131] of  String
-
-	(name ":FUNCTION")
-	(string_value "%3ADEFINITION-NAME"))
-
-([P8_ProjectKB_Class30132] of  String
-
-	(name ":RULE")
-	(string_value "%3ADEFINITION-NAME"))
-
-([P8_ProjectKB_Class30133] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([P8_ProjectKB_Class30134] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([P8_ProjectKB_Class30135] of  String
-
-	(name "vivienda_perfil_puntos")
-	(string_value "cliente"))
-
-([P8_ProjectKB_Class30136] of  String
-
-	(name "Vivienda")
-	(string_value "distrito{}inmobiliaria"))
-
-([P8_ProjectKB_Class30137] of  String
-
-	(name "Inmobiliaria")
-	(string_value "nombre"))
-
-([P8_ProjectKB_Class30138] of  String
-
-	(name ":JESS-DEFINITION")
-	(string_value "%3ADEFINITION-NAME"))
-
-([P8_ProjectKB_Class30139] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([P8_ProjectKB_Class30140] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([P8_ProjectKB_Class30141] of  Map
-)
-
-([P8_ProjectKB_Class30142] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "P8_ProjectKB_Class30141")
-	(value_class "java.util.Map"))
-
-([P8_ProjectKB_Class30143] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([P8_ProjectKB_Class31] of  Widget
 
