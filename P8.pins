@@ -1,4 +1,4 @@
-; Sun Apr 15 17:31:07 GMT+01:00 2018
+; Sun Apr 15 20:33:09 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -33,7 +33,7 @@
 	(nombre "pepe")
 	(num_familiares 2)
 	(parking TRUE)
-	(poligono_comercial_cerca FALSE)
+	(poligono_comercial_cerca TRUE)
 	(pref_chimenea FALSE)
 	(pref_jardin FALSE)
 	(presupuesto 500000.0)
@@ -146,14 +146,14 @@
 ([P8_Class20052] of  Cliente
 
 	(centro_urbano_cerca FALSE)
-	(colegio_cerca FALSE)
+	(colegio_cerca TRUE)
 	(contaminacion_baja TRUE)
 	(criminalidad_baja TRUE)
 	(gim_cerca TRUE)
 	(minusvalia FALSE)
 	(nombre "fran")
 	(num_familiares 3)
-	(parking FALSE)
+	(parking TRUE)
 	(poligono_comercial_cerca FALSE)
 	(pref_chimenea FALSE)
 	(pref_jardin TRUE)
