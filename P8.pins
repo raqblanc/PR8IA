@@ -1,4 +1,4 @@
-; Sun Apr 15 20:33:09 CEST 2018
+; Sun Apr 15 20:43:32 CEST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -219,6 +219,16 @@
 	(planta primero)
 	(precio 280000.0))
 
+([P8_Class40085] of  Piso
+
+	(ascensor TRUE)
+	(distrito [practica8_Class0])
+	(dormitorios 4)
+	(inmobiliaria [practica8_Class5])
+	(m2 120.0)
+	(planta bajo)
+	(precio 350000.0))
+
 ([P8_Class5] of  Chalet
 
 	(chimenea FALSE)
@@ -272,7 +282,8 @@
 		[practica8_Class10017]
 		[practica8_Class10029]
 		[P8_Class5]
-		[P8_Class7])
+		[P8_Class7]
+		[P8_Class40085])
 	(zonas_verdes FALSE))
 
 ([practica8_Class10017] of  Piso
