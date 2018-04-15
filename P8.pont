@@ -1,4 +1,4 @@
-; Sun Apr 15 10:08:17 CEST 2018
+; Sun Apr 15 16:25:44 GMT+01:00 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -510,11 +510,6 @@
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot estatus
-		(type SYMBOL)
-		(allowed-values alto bajo medio)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot zona_verde_cerca
